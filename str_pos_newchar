@@ -12,7 +12,7 @@ abrackdabra
 code:
 def mutate_string(string, position, character):
     string=list(string)
-    string[5]=character
+    string[position]=character
     string="".join(string)
     return string
 
