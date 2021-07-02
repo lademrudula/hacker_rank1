@@ -8,3 +8,11 @@ if __name__ == '__main__':
     line = input()
     result = split_and_join(line)
     print(result)
+"""
+output:
+Sample Input
+this is a string   
+
+Sample Output
+this-is-a-string
+"""
