@@ -1,0 +1,23 @@
+#You are given an immutable string, and you want to make changes to it.by using the position where the character should add in the string
+"""
+Sample Input
+
+STDIN           Function
+-----           --------
+abracadabra     s = 'abracadabra'
+5 k             position = 5, character = 'k'
+Sample Output
+abrackdabra
+"""
+code:
+def mutate_string(string, position, character):
+    string=list(string)
+    string[5]=character
+    string="".join(string)
+    return string
+
+if __name__ == '__main__':
+    s = input()
+    i, c = input().split()
+    s_new = mutate_string(s, int(i), c)
+    print(s_new)
