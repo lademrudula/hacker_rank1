@@ -1,0 +1,10 @@
+#here we are dividing a sentance and join it using hyphen
+def split_and_join(line):
+    line=line.split(" ")
+    line="-".join(line)
+    return(line)
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
